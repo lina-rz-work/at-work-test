@@ -12,6 +12,17 @@ export const Container = styled.div`
   h1 {
     color: ${({ theme }) => theme.colors.gray01}
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    max-width: 344px;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    hr {
+      margin: 17px 0 15px;
+    }
+  }
 `;
 
 export const UserList = styled.div`
@@ -27,7 +38,7 @@ export const UserList = styled.div`
 `;
 
 export const ArchivedSection = styled.div`
-  margin-top: 40px;
+  margin-top: 0px;
 `;
 
 export const ArchivedTitle = styled.h2`

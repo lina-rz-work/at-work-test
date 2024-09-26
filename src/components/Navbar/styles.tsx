@@ -14,7 +14,8 @@ export const StyledNavbar = styled.div`
   z-index: 100;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding: 16px 10px;
+    padding: 16px 11px;
+    height: 50px;
   }
 `
 

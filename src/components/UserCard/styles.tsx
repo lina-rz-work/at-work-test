@@ -58,6 +58,13 @@ export const Username = styled.div<{ isArchived?: boolean }>`
 
 export const Company = styled.div<{ isArchived?: boolean }>`
   color: ${({ isArchived, theme }) => (isArchived ? theme.colors.gray03 : theme.colors.gray02)};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    max-width: 120px;
+    max-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;
 
 export const City = styled.div<{ isArchived?: boolean }>`
